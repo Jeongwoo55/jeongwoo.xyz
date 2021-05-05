@@ -3,10 +3,41 @@ h1, h2, h3, h4, h5, h6, p{
     color: white;
 }
 
+p {
+    font-size: 14px;
+    color: #dcddde;
+}
+
 a {
-    color:cornflowerblue;
+    color:#00b0f4;
+}
+
+b {
+    color: white;
+}
+
+about p {
+    width: 70%;
+    max-width: 750px;
+    line-height: 20px;
+}
+
+about a {
+    color: #dcddde;
+    font-style: italic;
 }
 
 body {
-    background-color: #121212;
+    background-color: #202225;
+    margin: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    h1, h2, h3, h4, h5, h6, p, about{
+        text-align: center;
+    }
+
+    about p {
+        width: 100%;
+    }
 }
