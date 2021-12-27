@@ -30,7 +30,7 @@ about a {
     font-style: italic;
 }
 
-@media only screen and (max-device-width: 600px) {
+/* @media only screen and (max-device-width: 600px) {
     body {
         font-size: 100px
     }
@@ -46,4 +46,4 @@ about a {
         max-width: none;
         line-height: unset;
     }
-}
+} */
