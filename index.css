@@ -12,8 +12,8 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-size: 18px;
     color: #dcddde;
-    width: 70%;
-    max-width: 750px;
+    width: 100%;
+    max-width: 600px;
     line-height: 20px;
 }
 
@@ -30,7 +30,7 @@ about a {
     font-style: italic;
 }
 
-@media only screen and (max-device-width: 600px) {
+/* @media only screen and (max-device-width: 600px) {
     body {
         font-size: 100px
     }
@@ -46,4 +46,4 @@ about a {
         max-width: none;
         line-height: unset;
     }
-}
+} */
