@@ -1,33 +1,39 @@
 body {
-    background-color: #202225;
-    margin: 25px;
-    font-family: monospace;
-    color: #dcddde;
+  background-color: #202225;
+  margin: 25px;
+  font-family: monospace;
+  color: #dcddde;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: white;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
 }
 
-p, li {
-    font-size: 18px;
-    color: #dcddde;
-    width: 100%;
-    max-width: 700px;
-    line-height: 24px;
+p,
+li {
+  font-size: 18px;
+  color: #dcddde;
+  width: 100%;
+  max-width: 700px;
+  line-height: 24px;
 }
 
 a {
-    color:#00b0f4;
+  color: #00b0f4;
 }
 
 b {
-    color: white;
+  color: white;
 }
 
 about a {
-    color: #dcddde;
-    font-style: italic;
+  color: #dcddde;
+  font-style: italic;
 }
 
 /* @media only screen and (max-device-width: 600px) {
