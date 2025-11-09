@@ -11,7 +11,6 @@ main,
 .container {
   max-width: 900px;
   margin: 0 auto; /* center */
-  padding: 0 32px; /* increased side padding for better readability */
 }
 
 h1,
@@ -61,7 +60,6 @@ about a {
 about {
   display: block;
   margin: 28px auto; /* spacing between posts */
-  padding: 24px 32px; /* increased padding, matching container */
   background: transparent; /* keep background dark */
   max-width: 820px; /* slightly narrower for blog body */
 }
@@ -83,21 +81,3 @@ p6 {
   font-size: 14px;
   margin-bottom: 0.6em;
 }
-
-/* @media only screen and (max-device-width: 600px) {
-    body {
-        font-size: 100px
-    }
-    
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 1em;
-        margin: 75px 0;
-    }
-
-    p {
-        font-size: 0.5em;
-        width: unset;
-        max-width: none;
-        line-height: unset;
-    }
-} */
