@@ -1,0 +1,103 @@
+body {
+  background-color: #202225;
+  margin: 25px;
+  font-family: monospace;
+  color: #dcddde;
+}
+
+/* center page content and constrain width for better readability for blog pages */
+.blog-container,
+main,
+.container {
+  max-width: 900px;
+  margin: 0 auto; /* center */
+  padding: 0 32px; /* increased side padding for better readability */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+
+/* Add spacing for all headers except h1 (page title) */
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 2.5em; /* increased spacing before headers */
+  margin-bottom: 0.8em;
+}
+
+p,
+li {
+  font-size: 18px;
+  color: #dcddde;
+  width: 100%;
+  line-height: 28px; /* improved readability */
+  margin-top: 0.9em;
+  margin-bottom: 0.9em;
+  max-width: none;
+}
+
+a {
+  color: #00b0f4;
+}
+
+b {
+  color: white;
+}
+
+about a {
+  color: #dcddde;
+  font-style: italic;
+}
+
+/* style the custom `about` tag as a block section used for each post */
+about {
+  display: block;
+  margin: 28px auto; /* spacing between posts */
+  padding: 24px 32px; /* increased padding, matching container */
+  background: transparent; /* keep background dark */
+  max-width: 820px; /* slightly narrower for blog body */
+}
+
+/* reset margin for first heading in about section */
+about > h2:first-child {
+  margin-top: 0.2em;
+}
+
+/* other headings inside about keep normal spacing */
+about h2 {
+  margin-bottom: 0.6em;
+}
+
+/* smaller metadata tag (p6) fallback styling */
+p6 {
+  display: inline-block;
+  color: #9aa0a6;
+  font-size: 14px;
+  margin-bottom: 0.6em;
+}
+
+/* @media only screen and (max-device-width: 600px) {
+    body {
+        font-size: 100px
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1em;
+        margin: 75px 0;
+    }
+
+    p {
+        font-size: 0.5em;
+        width: unset;
+        max-width: none;
+        line-height: unset;
+    }
+} */
