@@ -33,7 +33,7 @@ b {
 
 about a {
   color: #dcddde;
-  font-style: italic;
+  font-style: oblique 7deg;
 }
 
 /* @media only screen and (max-device-width: 600px) {
