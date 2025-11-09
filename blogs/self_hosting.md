@@ -26,7 +26,7 @@ When you self host an open source project, you trust the contributors, security 
 
 > Note: when you self host an open source project, you can always look at the codebase to ensure privacy and security, but you should consider two things. You need to be a security expert, and you must *actually* read the entire codebase...
 
-Cost is another reason why people self host. When you use an online service, you are paying with your data or a monthly subscription ranging from a few dollars to $15 per service. These subscriptions add up quickly and, [according to DCN](https://digitalcontentnext.org/blog/2025/08/07/q2-2025-digital-subscription-tracking-report/), average total monthly household spending on digital subscriptions is $149.64 in Q2 2025. When you self host, you are either paying for a [VPS](https://en.wikipedia.org/wiki/Virtual_private_server) (starting at $5 per month) or buying/using an existing computer and paying electricity and internet.
+Cost is another reason why people self host. When you use an online service, you are paying with your data or a monthly subscription ranging from a few dollars to $15 per service. These subscriptions add up quickly and, [according to DCN](https://digitalcontentnext.org/blog/2025/08/07/q2-2025-digital-subscription-tracking-report/), average total monthly household spending on digital subscriptions is $149.64 in Q2 2025. When you self host, you can either pay for a [VPS](https://en.wikipedia.org/wiki/Virtual_private_server) (starting at $5 per month) or buy/use an existing computer and pay for electricity and internet.
 
 Using an old computer is a great way to get started with self hosting. My first home server was an old [Dell All-in-one](https://www.pcmag.com/reviews/dell-inspiron-23-2350) which used a mobile processor. There is no need for powerful systems to self host.
 
@@ -67,7 +67,7 @@ There is a demo instance here: https://demo.immich.app/
 > Note: PiVPN is maintained on a best-effort basis. See [here](https://github.com/pivpn/pivpn/releases/tag/v4.6.1).
 ### Minecraft Server
 
-Open source software aren't the only things you can self host. You can also host game servers such as Minecraft, Factorio, or Terraria. There are many guides on self hosting via CLI or you can use a game server management software like [Pterodactyl](https://github.com/pterodactyl/panel).
+Open source software is not the only thing you can self host. You can also host game servers such as Minecraft, Factorio, or Terraria. There are many guides on self hosting via CLI or you can use a game server management software like [Pterodactyl](https://github.com/pterodactyl/panel).
 
 ## Conclusion
 
