@@ -1,8 +1,26 @@
 <html>
   <head>
     <title>Jeongwoo's Blog</title>
+    <!-- Waline style file -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+    />
+    <!-- Waline script file -->
+    <script type="module">
+      import { init } from "https://unpkg.com/@waline/client@v3/dist/waline.js";
+
+      init({
+        el: "#waline",
+        serverURL: "https://waline-blog-five-snowy.vercel.app",
+        lang: "en",
+        dark: true,
+        login: "disable",
+        imageUploader: false,
+      });
+    </script>
     <link rel="stylesheet" href="/index.css" />
-    <link rel="stylesheet" href="/blogs/blog.css" />
+    <link rel="stylesheet" href="/blog/blog.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
@@ -15,9 +33,11 @@
     </navbar>
     <about>
       <h1>First blog</h1>
-      <p6>2024-11-19</p6>
+      <p6>Posted on 2024-11-19</p6>
       <p>Welcome to my first blog post!</p>
     </about>
+    <!-- Waline Comments -->
+    <div id="waline" style="max-width: 820px; margin: 40px auto"></div>
     <footer>
       <p>
         <a href="/">Home</a>
@@ -26,7 +46,7 @@
         <a href="https://github.com/Jeongwoo55">GitHub</a>
         <a href="https://www.linkedin.com/in/jeongwooc">LinkedIn</a>
       </p>
-      <p6>Last updated: 2025-11-08</p6>
+      <p6>Page last updated: 2025-11-10</p6>
     </footer>
   </body>
 </html>

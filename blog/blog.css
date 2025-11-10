@@ -80,3 +80,19 @@ p6 {
   font-size: 14px;
   margin-bottom: 0.6em;
 }
+
+/* Waline customization - match site theme color */
+:root {
+  --waline-active-color: #00b0f4;
+  --waline-theme-color: #00b0f4;
+}
+
+/* Hide Waline sort options */
+.wl-sort {
+  display: none;
+}
+
+/* Hide Waline power footer */
+.wl-power {
+  display: none;
+}
