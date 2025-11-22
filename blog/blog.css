@@ -5,6 +5,10 @@ body {
   color: #dcddde;
 }
 
+img {
+  width: 100%;
+}
+
 /* center page content and constrain width for better readability for blog pages */
 .blog-container,
 main,

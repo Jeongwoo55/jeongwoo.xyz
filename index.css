@@ -23,6 +23,13 @@ li {
   line-height: 24px;
 }
 
+p6 {
+  display: inline-block;
+  color: #9aa0a6;
+  font-size: 14px;
+  margin-bottom: 0.6em;
+}
+
 a {
   color: #00b0f4;
 }
