@@ -1,15 +1,19 @@
+---
+title: Planning my Home Server
+date: 2026-04-05
+---
 ## Intro
 
-Lately, I have been wanting to build a new home server. In my [[1. My experience self hosting|previous post]], I listed self-hosted software that I was using. I am running my Docker applications / game servers from an old [Dell All-in-one](https://www.pcmag.com/reviews/dell-inspiron-23-2350) and my NAS / VPN / Syncthing from my Raspberry Pi 4. The Dell All-in-one has a mobile 4th gen i5 CPU and 8GB of DDR3 RAM. The performance from these computers has been sufficient, but I would like to upgrade and build a new home server at my apartment.
+Lately, I have been wanting to build a new home server. In my [previous post](https://jeongwoo.xyz/blog/self-hosting.md), I listed self-hosted software that I was using. I am running my Docker applications / game servers from an old [Dell All-in-one](https://www.pcmag.com/reviews/dell-inspiron-23-2350) and my NAS / VPN / Syncthing from my Raspberry Pi 4. The Dell All-in-one has a mobile 4th gen i5 CPU and 8GB of DDR3 RAM. The performance from these computers has been sufficient, but I would like to upgrade and build a new home server at my apartment.
 
-![[Raspberry-Pi-4-penny-cooler.jpg]]
+![My Raspberry Pi 4 with a "penny cooler".](https://jeongwoo.xyz/blog/planning-my-home-server/Raspberry-Pi-4-penny-cooler.jpg)
 My Raspberry Pi 4 with a "penny cooler".
 
 ## New hardware
 
 I have always wanted to own a server rack for my home server. The industry standard format for server racks is [19 inches wide](https://en.wikipedia.org/wiki/19-inch_rack). However, fitting a standard server rack into my apartment is not ideal, especially if I have to move. A few months ago, I saw several [videos](https://www.youtube.com/watch?v=y1GCIwLm3is&pp=ygUTMTAgaW5jaCBzZXJ2ZXIgamVmZg%3D%3D)  and [social media posts](https://www.reddit.com/r/minilab/) about a 10 inch wide rack. This smaller format is perfect for my needs.
 
-![[Jeff-Geerling-Mini-Rack-003.png]]
+![Jeff Geerling's Mini Rack 003](https://jeongwoo.xyz/blog/planning-my-home-server/Jeff-Geerling-Mini-Rack-003.png)
 Source: Jeff Geerling ([Link](https://github.com/geerlingguy/mini-rack/issues/6))
 
 ### Compute
@@ -24,10 +28,11 @@ In addition to Docker applications, I need to have a network attached storage (N
 
 Given that this home server will be moved several times, I would prefer to build a fully solid state drive NAS but that may be difficult with [storage prices](https://pcpartpicker.com/trends/price/internal-hard-drive/). I need to wait some time for storage prices to come down or go with hard drives if a better deal comes up. My current home server has 20TB of HDD storage with 6TB being used in the NAS. I would like to have at least 6TB for my new build. In addition to the storage drives, I will need to [buy or 3D print a mount](https://mini-rack.jeffgeerling.com/#disk-shelves). I could also consider buying a normal NAS enclosure and putting it on a tray.
 
-![[PCPartPicker-Price-Trends-SSD-M2-NVME-2TB.png]]
+![PCPartPicker's Price Trends for SSD M2 NVME 2TB](https://jeongwoo.xyz/blog/planning-my-home-server/PCPartPicker-Price-Trends-SSD-M2-NVME-2TB.png)
 Source: PCPartPicker Price Trends ([Link](https://pcpartpicker.com/trends/price/internal-hard-drive/))
 
 ### Remaining parts
+
 Lastly, I need to purchase the rack, networking switch, and UPS. There are several metal racks available on Amazon for around $100, or I could 3D print my own rack.
 
 ## New software
