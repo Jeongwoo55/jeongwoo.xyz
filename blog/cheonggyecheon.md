@@ -12,7 +12,7 @@ Cheonggyecheon is a stream that flows west to east, starting at Inwangsan Mounta
 
 During the Joseon period in the 14th century, the stream underwent its first restoration project with updated dredging and embankments to reduce the dangers of flooding.
 
-![A drawing that commemorates the Cheonggeycheon dredging](https://jeongwoo.xyz/blog/cheonggyecheon/cheonggyecheon-dredging-drawing.jpg)
+![A drawing that commemorates the Cheonggyecheon dredging](https://jeongwoo.xyz/blog/cheonggyecheon/cheonggyecheon-dredging-drawing.jpg)
 
 After the initial restoration project, the amount of maintenance done on Cheonggyecheon would vary by monarchs. By the early 1900s, the stream was in a bad state due to lack of maintenance and flooding damage.
 
