@@ -23,6 +23,15 @@ about img + p {
   text-align: center;
 }
 
+about video + p {
+  margin-top: 0.5em;
+  margin-bottom: 1.6em;
+  color: #9aa0a6;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+}
+
 /* center page content and constrain width for better readability for blog pages */
 .blog-container,
 main,
