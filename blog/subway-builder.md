@@ -43,6 +43,7 @@ Latest version of my Austin transit network.
 After Austin, I turned my attention towards NYC. While Austin had budget constraints, NYC has capacity challenges. Instead of building light rail, NYC requires heavy metro lines. I decided to recreate the MTA subway network which was a fun challenge.
 
 ![NYC station ridership network](https://jeongwoo.xyz/blog/subway-builder/nyc-station-ridership.jpg)
+My NYC network station ridership
 
 I also built transit networks in DFW, Seattle, Washington DC, and other cities included in the base game. Eventually, I wanted to build in Seoul, my home city. Seoul is not in the base game a requires mods. This is a great [tutorial on how to install mods](https://www.youtube.com/watch?v=mCrq765pXfo). I just started on my Seoul network but here is a video of the trains going around.
 
