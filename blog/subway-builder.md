@@ -46,10 +46,12 @@ After Austin, I turned my attention towards NYC. While Austin had budget constra
 
 I also built transit networks in DFW, Seattle, Washington DC, and other cities included in the base game. Eventually, I wanted to build in Seoul, my home city. Seoul is not in the base game a requires mods. This is a great [tutorial on how to install mods](https://www.youtube.com/watch?v=mCrq765pXfo). I just started on my Seoul network but here is a video of the trains going around.
 
-[Seoul modded network video](https://jeongwoo.xyz/blog/subway-builder/seoul-video.mp4)
+[WIP Seoul network](https://jeongwoo.xyz/blog/subway-builder/seoul-video.mp4)
+WIP Seoul network
 
 ## Conclusion
 
 Subway Builder is a fun game that has a lot of potential. In its current state, the game is a bit overpriced for $30 (soon to be $40 on Steam). There are many bugs, performance issues, and features still missing. But even with the shortcomings, I was able to sink in countless hours into the game. If you enjoy managing passenger transportation in city builders or transit simulations, this game is worth considering.
 
-[NYC train movement video](https://jeongwoo.xyz/blog/subway-builder/nyc-video.mp4)
+[NYC Financial District + Lag](https://jeongwoo.xyz/blog/subway-builder/nyc-video.mp4)
+NYC Financial District + Lag
