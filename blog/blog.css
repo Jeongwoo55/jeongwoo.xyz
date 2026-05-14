@@ -14,22 +14,27 @@ img {
   margin: 0 auto;
 }
 
-about img + p {
-  margin-top: 0.5em;
-  margin-bottom: 1.6em;
-  color: #9aa0a6;
-  font-size: 15px;
-  line-height: 1.6;
+figure video {
+  width: auto;
+  max-width: 100%;
+  max-height: 720px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+figure {
+  margin: 0 auto 1.6em;
+  max-width: 100%;
   text-align: center;
 }
 
-about video + p {
+about figure figcaption {
   margin-top: 0.5em;
   margin-bottom: 1.6em;
   color: #9aa0a6;
   font-size: 15px;
   line-height: 1.6;
-  text-align: center;
 }
 
 /* center page content and constrain width for better readability for blog pages */
