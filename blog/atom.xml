@@ -4,14 +4,14 @@
   <link rel="self" type="application/atom+xml" href="https://jeongwoo.xyz/blog/atom.xml"/>
   <link rel="alternate" type="text/html" href="https://jeongwoo.xyz/blog"/>
   <generator uri="https://jeongwoo.xyz/">custom script</generator>
-  <updated>2026-06-28T00:00:00+00:00</updated>
+  <updated>2026-06-28T19:26:55+00:00</updated>
   <id>https://jeongwoo.xyz/blog/atom.xml</id>
   <entry xml:lang="en">
     <title>Setting up my home server</title>
     <link rel="alternate" type="text/html" href="https://jeongwoo.xyz/blog/setting-up-my-home-server/"/>
     <id>https://jeongwoo.xyz/blog/setting-up-my-home-server/</id>
-    <published>2026-06-28T00:00:00+00:00</published>
-    <updated>2026-06-28T00:00:00+00:00</updated>
+    <published>2026-06-28T19:26:55+00:00</published>
+    <updated>2026-06-28T19:26:55+00:00</updated>
     <author>
       <name>Jeongwoo Choi</name>
     </author>
@@ -99,8 +99,8 @@
     <title>How to build your dream subway</title>
     <link rel="alternate" type="text/html" href="https://jeongwoo.xyz/blog/subway-builder/"/>
     <id>https://jeongwoo.xyz/blog/subway-builder/</id>
-    <published>2026-05-13T00:00:00+00:00</published>
-    <updated>2026-05-13T00:00:00+00:00</updated>
+    <published>2026-05-14T01:34:16+00:00</published>
+    <updated>2026-05-14T01:34:16+00:00</updated>
     <author>
       <name>Jeongwoo Choi</name>
     </author>
@@ -292,8 +292,8 @@
     <title>The urban transformation of Cheonggyecheon</title>
     <link rel="alternate" type="text/html" href="https://jeongwoo.xyz/blog/cheonggyecheon/"/>
     <id>https://jeongwoo.xyz/blog/cheonggyecheon/</id>
-    <published>2026-05-10T00:00:00+00:00</published>
-    <updated>2026-05-10T00:00:00+00:00</updated>
+    <published>2026-05-11T02:10:29+00:00</published>
+    <updated>2026-05-11T02:10:29+00:00</updated>
     <author>
       <name>Jeongwoo Choi</name>
     </author>
@@ -454,8 +454,8 @@
     <title>Planning my Home Server</title>
     <link rel="alternate" type="text/html" href="https://jeongwoo.xyz/blog/planning-my-home-server/"/>
     <id>https://jeongwoo.xyz/blog/planning-my-home-server/</id>
-    <published>2026-04-05T00:00:00+00:00</published>
-    <updated>2026-04-05T00:00:00+00:00</updated>
+    <published>2026-04-06T03:55:58+00:00</published>
+    <updated>2026-04-06T03:55:58+00:00</updated>
     <author>
       <name>Jeongwoo Choi</name>
     </author>
@@ -613,8 +613,8 @@
     <title>The unique layouts of airplane cargo hold lavatories</title>
     <link rel="alternate" type="text/html" href="https://jeongwoo.xyz/blog/aircraft-lavatory-layouts/"/>
     <id>https://jeongwoo.xyz/blog/aircraft-lavatory-layouts/</id>
-    <published>2025-11-22T00:00:00+00:00</published>
-    <updated>2025-11-22T00:00:00+00:00</updated>
+    <published>2025-11-22T22:37:55+00:00</published>
+    <updated>2025-11-22T22:37:55+00:00</updated>
     <author>
       <name>Jeongwoo Choi</name>
     </author>
@@ -759,8 +759,8 @@
     <title>My experience self hosting</title>
     <link rel="alternate" type="text/html" href="https://jeongwoo.xyz/blog/self-hosting/"/>
     <id>https://jeongwoo.xyz/blog/self-hosting/</id>
-    <published>2025-11-08T00:00:00+00:00</published>
-    <updated>2025-11-08T00:00:00+00:00</updated>
+    <published>2025-11-09T05:17:00+00:00</published>
+    <updated>2025-11-09T05:17:00+00:00</updated>
     <author>
       <name>Jeongwoo Choi</name>
     </author>

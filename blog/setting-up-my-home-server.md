@@ -1,6 +1,6 @@
 ---
 title: Setting up my home server
-date: 2026-06-28
+published: 2026-06-28T14:26:55-05:00
 ---
 ## Intro
 

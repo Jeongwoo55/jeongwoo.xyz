@@ -1,6 +1,6 @@
 ---
 title: The urban transformation of Cheonggyecheon
-date: 2026-05-10
+published: 2026-05-10T21:10:29-05:00
 ---
 ## Intro
 

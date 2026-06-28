@@ -1,6 +1,6 @@
 ---
 title: The unique layouts of airplane cargo hold lavatories
-date: 2025-11-22
+published: 2025-11-22T16:37:55-06:00
 ---
 ## Intro
 

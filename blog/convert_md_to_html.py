@@ -241,11 +241,12 @@ def convert_markdown(body: str) -> str:
     return "\n      ".join(blocks)
 
 
-def build_html(title: str, date: str, body_html: str) -> str:
+def build_html(title: str, datetime_value: str, date_display: str, body_html: str) -> str:
     date_html = ""
-    if date:
-        date_html = f"      <p6>Posted on <time datetime=\"{sanitize_text(date)}\">{sanitize_text(date)}</time></p6>\n"
-    return f"{BASE_HEAD}      <h1>{sanitize_text(title)}</h1>\n{date_html}      {body_html}\n{FOOTER.format(date=sanitize_text(date))}"
+    if date_display:
+        datetime_attr = sanitize_text(datetime_value) if datetime_value else sanitize_text(date_display)
+        date_html = f"      <p6>Posted on <time datetime=\"{datetime_attr}\">{sanitize_text(date_display)}</time></p6>\n"
+    return f"{BASE_HEAD}      <h1>{sanitize_text(title)}</h1>\n{date_html}      {body_html}\n{FOOTER.format(date=sanitize_text(date_display))}"
 
 
 def main() -> int:
@@ -265,7 +266,8 @@ def main() -> int:
     content = source_path.read_text(encoding="utf-8")
     metadata, body = parse_frontmatter(content)
     title = metadata.get("title")
-    date = metadata.get("date", "")
+    published = metadata.get("published", metadata.get("date", ""))
+    display_date = published.split("T", 1)[0] if published else ""
 
     if not title:
         first_heading = None
@@ -286,7 +288,7 @@ def main() -> int:
         output_path = source_path.with_suffix("").with_name(source_path.stem) / "index.html"
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(build_html(title, date, html_body), encoding="utf-8")
+    output_path.write_text(build_html(title, published, display_date, html_body), encoding="utf-8")
     print(f"Wrote {output_path}")
     return 0
 

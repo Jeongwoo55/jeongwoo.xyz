@@ -1,6 +1,6 @@
 ---
 title: My experience self hosting
-date: 2025-11-08
+date: 2025-11-08T23:17:00-06:00
 ---
 ## Intro
 Hello! My name is Jon. This is my first proper blog post. I am interested in technology, transit, photography, cities, and video games. Today, I will be writing about self hosting.

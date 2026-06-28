@@ -1,6 +1,6 @@
 ---
 title: Planning my Home Server
-date: 2026-04-05
+published: 2026-04-05T22:55:58-05:00
 ---
 ## Intro
 

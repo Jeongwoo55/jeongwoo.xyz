@@ -120,12 +120,16 @@ def main() -> int:
         content = md_path.read_text(encoding="utf-8")
         meta, body = parse_frontmatter(content)
         title = meta.get("title")
-        date_text = meta.get("date")
+        date_text = meta.get("published", meta.get("date", ""))
         if not title or not date_text:
             continue
 
         try:
-            published = datetime.fromisoformat(date_text).replace(tzinfo=timezone.utc)
+            published = datetime.fromisoformat(date_text)
+            if published.tzinfo is None:
+                published = published.replace(tzinfo=timezone.utc)
+            else:
+                published = published.astimezone(timezone.utc)
         except ValueError:
             try:
                 published = datetime.strptime(date_text, "%Y-%m-%d").replace(tzinfo=timezone.utc)
