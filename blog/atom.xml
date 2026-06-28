@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>Jeongwoo's Blog</title>
+  <link rel="self" type="application/atom+xml" href="https://jeongwoo.xyz/blog/atom.xml"/>
+  <link rel="alternate" type="text/html" href="https://jeongwoo.xyz/blog"/>
+  <generator uri="https://jeongwoo.xyz/">custom script</generator>
+  <updated>2026-06-28T00:00:00+00:00</updated>
+  <id>https://jeongwoo.xyz/blog/atom.xml</id>
+  <entry xml:lang="en">
+    <title>Setting up my home server</title>
+    <link rel="alternate" type="text/html" href="https://jeongwoo.xyz/blog/setting-up-my-home-server/"/>
+    <id>https://jeongwoo.xyz/blog/setting-up-my-home-server/</id>
+    <published>2026-06-28T00:00:00+00:00</published>
+    <updated>2026-06-28T00:00:00+00:00</updated>
+    <author>
+      <name>Jon</name>
+    </author>
+    <content type="html" xml:base="https://jeongwoo.xyz/blog/setting-up-my-home-server/"><![CDATA[<h1>Setting up my home server</h1>
+        <p6>Posted on <time datetime="2026-06-28">2026-06-28</time></p6>
+        <h2>Intro</h2>
+        <p>In April, I mentioned <a href="https://jeongwoo.xyz/blog/planning-my-home-server.md">my plan for my new home
+                server</a>. Initially, the new home server was a nice-to-have upgrade. However, it soon became a
+            necessity. After slightly more than 5 years of operating, the 1TB SATA SSD in my Dell AIO died...
+            Conveniently (for Samsung), the warranty on my SSD is exactly 5 years.</p>
+        <p>However, I had some fortune on my side as I had set up <a
+                href="https://github.com/garethgeorge/backrest">backrest</a> a few weeks prior to the SSD failure. It
+            included most files that were on the SSD.</p>
+        <h2>Searching for cheap hardware, getting broken hardware</h2>
+        <p>As a <em>normal</em> person would, I went to the April <a href="https://tarc.org/hamexpo/">Belton hamfest</a>
+            in search of a mini PC. Hamfests usually sell radios and electronic components, so I knew it might not be
+            possible to find a mini PC. However, I found one booth that was selling computers. He did not have a mini PC
+            ready to sell, but he did find an HP EliteDesk in his bins. We did not know the specs but he offered to give
+            me the PC with a $50 IOU if I'm able to get the computer to work.</p>
+        <p><img src="https://jeongwoo.xyz/blog/setting-up-my-home-server/belton-hamfest-pc-damaged-ssd.jpg" alt="SSD with screw mark" /> Why is there a screw hole in the SSD cover...</p>
+        <p>Unfortunately, the computer did not work. This computer normally has a dedicated GPU but someone removed the
+            GPU and left the heatsink. Then, the heatsink was screwed into the SSD. I was able to salvage two 8GB DDR4
+            SODIMM modules and I might be able to use the CPU (AMD Ryzen 7 Pro 4750 GE) in the future. Maybe with a new
+            SSD, this computer will work but I was unable to enter the BIOS so I'm not sure.</p>
+        <p><img src="https://jeongwoo.xyz/blog/setting-up-my-home-server/belton-hamfest-pc-disassembled.jpg" alt="Mini PC from Belton hamfest disassembled" /> I was surprised to see the heatsink for the GPU</p>
+        <h2>The search continues</h2>
+        <p>A few weekends later, I went to the <a href="https://www.vcfsw.org/">Vintage Computer Festival Southwest</a>
+            in DFW but the computers were much older than what I was looking for. At least it was fun seeing vintage
+            computers and buying coffee table books.</p>
+        <p><img src="https://jeongwoo.xyz/blog/setting-up-my-home-server/vcf-coffee-table-books.jpg" alt="VCF coffee table books" /> The Macintosh Plus Owner's Guide and Macintosh Reference</p>
+        <p>A few more weekends later, I went to the <a href="https://www.dfwhamexpo.com/">DFW Hamfest</a> where I met
+            the same computer booth owner from Belton. Lucky for me, he brought two mini PCs and two 256GB SSDs for me.
+            While I offered to pay, he insisted I take it for free and pass on the generosity.</p>
+        <p><img src="https://jeongwoo.xyz/blog/setting-up-my-home-server/dfw-hamfest-haul.jpg" alt="DFW hamfest haul" />
+            My haul from the DFW hamfest</p>
+        <p>After inspecting the mini PCs, I found that both did not have RAM and one unit was missing a CPU. But, I was
+            able to build a working PC using the computer with CPU, RAM from the initial PC, and a 1TB SSD given as a
+            gift from a friend. Once the computer booted, I started installing Linux.</p>
+        <h2>Setting up my home server</h2>
+        <p><img src="https://jeongwoo.xyz/blog/setting-up-my-home-server/new-home-server.jpg" alt="New home server" />
+            My new home server!</p>
+        <p>At first, I tried to install Ubuntu but ran into a weird boot issue where the screen would go blank. Debian
+            also had the same issue but I was able to SSH into the computer.</p>
+        <blockquote>
+            <p>Sidenote: why is the Ubuntu server installation script worse than Debian or even Arch... Maybe I did
+                something wrong, but Debian was super straightforward and better than Ubuntu installation.</p>
+        </blockquote>
+        <p>For now, I moved most of my Docker applications to the new server. I am trying out <a
+                href="https://github.com/getarcaneapp/arcane">Arcane</a> as my Docker management software. So far,
+            it's okay. The dashboard is a little glitchy.</p>
+        <p>In addition to Arcane, I am also trying out <a
+                href="https://www.cloudflare.com/sase/products/access/">Cloudflare Access</a>, as suggested by a friend.
+            It's nice to add an additional layer of protection for my self hosted apps especially with the rise of
+            security risk from AI.</p>
+        <p>For next steps, I still need to set up a DNS, Minecraft/game servers, NAS, Immich, and better
+            networking/security. Besides better security, these other items can wait a bit longer. Also, I want to get
+            another mini PC and set up a cluster and a 10in rack. Maybe stay tuned for part 3 in a few months time or
+            whenever computer parts become cheaper.</p>
+        <h2>Conclusion</h2>
+        <p>TL;DR, go to hamfests to get free (maybe) working hardware and turn that into a home server.</p>]]></content>
+  </entry>
+  <entry xml:lang="en">
+    <title>How to build your dream subway</title>
+    <link rel="alternate" type="text/html" href="https://jeongwoo.xyz/blog/subway-builder/"/>
+    <id>https://jeongwoo.xyz/blog/subway-builder/</id>
+    <published>2026-05-13T00:00:00+00:00</published>
+    <updated>2026-05-13T00:00:00+00:00</updated>
+    <author>
+      <name>Jon</name>
+    </author>
+    <content type="html" xml:base="https://jeongwoo.xyz/blog/subway-builder/"><![CDATA[<h1>How to build your dream subway</h1>
+      <p6>Posted on <time datetime="2026-05-13">2026-05-13</time></p6>
+      <h2>Intro</h2>
+      <p>
+        In early 2025, I saw a
+        <a
+          href="https://www.reddit.com/r/transit/comments/1hz8gu4/i_started_making_a_game_where_you_build_a_subway/">
+          Reddit post</a
+        >
+        showcasing a new transit-focused game called
+        <a href="https://www.subwaybuilder.com/">Subway Builder</a>. I played a
+        lot of Cities: Skylines (both
+        <a href="https://store.steampowered.com/app/255710/Cities_Skylines/">one</a
+        >
+        &amp;
+        <a href="https://store.steampowered.com/app/949230/Cities_Skylines_II/">two</a
+        >
+        ), <a href="https://www.openttd.org/">OpenTTD</a>, and a little bit of
+        <a href="https://store.steampowered.com/app/1134710/NIMBY_RAILS/">NIMBY Rails</a
+        >. So I was excited to try out this new game. While the price is a
+        little steep ($30 from the website), I spent my adult money and bought
+        the game last December.
+      </p>
+      <figure>
+        <img
+          src="nyc.jpg" alt="NYC Subway Builder save with over 600 stations displayed." />
+
+        <figcaption>
+          My NYC save with 600+ stations. Unfortunately, it's too laggy to
+          continue.
+        </figcaption>
+      </figure>
+      <h2>The game basics</h2>
+      <p>
+        In normal mode, you start with $3 billion and are tasked with creating a
+        rail transit network for your city. The game supports 34 cities and many
+        more with mods. In terms of mode of transit, you can build heavy metro,
+        light metro, and commuter rail. Each type of train has different
+        characteristics such as speed, acceleration, turning radius, capacity,
+        cost, and many more.
+      </p>
+      <figure>
+        <img
+          src="heavy-metro-train-type-stats.png" alt="Subway Builder heavy metro train statistics screen." />
+
+        <figcaption>Train stats for heavy metro.</figcaption>
+      </figure>
+      <p>
+        One quirk of Subway Builder is the building cost attempts to be similar
+        to real life construction costs. While the game does not match today's
+        absurdly inflated transit project budgets, it does a decent job. When
+        you demolish a building, there is a cost determined by building
+        foundation depth and size. Additionally, the cost of construction varies
+        by the type of construction such as elevated, at grade, cut and cover,
+        or deep bore. There is even an additional cost multiplier for building
+        under bodies of water.
+      </p>
+      <figure>
+        <img
+          src="building-ui.jpg" alt="Subway Builder construction cost screen showing elevated, tunnel, and demolition costs." />
+
+        <figcaption>Building in Subway Builder</figcaption>
+      </figure>
+      <p>
+        The transit ridership is determined by census data. The game adds
+        population bubbles where people live and work. This means you need to
+        design your transit network around the needs of the real world city. If
+        you build in NYC, you need to serve the Financial District and Midtown.
+        If you build in DFW, you will suffer.
+      </p>
+      <figure>
+        <img
+          src="seattle-transit-demand.jpg" alt="Worker demand bubbles in Seattle where larger bubbles have more demand." />
+
+        <figcaption>
+          Worker demand bubbles in Seattle where larger bubbles have more
+          demand.
+        </figcaption>
+      </figure>
+      <h2>My first subway</h2>
+      <p>
+        Since I went to school in Austin, I decided to build Austin's
+        <a href="https://www.atptx.org/current-map/">Project Connect plan</a>. I
+        started with the orange and blue lines, with the airport expansion in
+        blueprint mode. My starting line costed a cool $1 billion, while the
+        real life plan is projected to cost $7.1 billion...
+      </p>
+      <figure>
+        <img
+          src="austin-starting-network.jpg" alt="Austin Project Connect lines in Subway Builder with airport extension shown." />
+
+        <figcaption>
+          Building the Orange and Blue line, with the phase 2 airport extension
+          shown in the bottom right.
+        </figcaption>
+      </figure>
+      <p>
+        With my starting line, I was turning a profit but it was a slow trickle.
+        It took many days to expand the network. Eventually, I added commuter
+        rail to Cedar Park and light rail to the population dense corridors as I
+        built my dream Austin transit network. Of course, it has a line from
+        where I live to downtown and the airport.
+      </p>
+      <figure>
+        <img
+          src="austin-dream-transit-network.png" alt="Latest version of the Austin transit network in Subway Builder." />
+
+        <figcaption>Latest version of my Austin transit network.</figcaption>
+      </figure>
+      <h2>Exploring NYC, Seoul, and more</h2>
+      <p>
+        After Austin, I turned my attention towards NYC. While Austin had budget
+        constraints, NYC has capacity challenges. Instead of building light
+        rail, NYC requires heavy metro lines. I decided to recreate the MTA
+        subway network which was a fun challenge.
+      </p>
+      <figure>
+        <img
+          src="nyc-station-ridership.jpg" alt="NYC MTA subway network recreated in Subway Builder." />
+
+        <figcaption>My NYC network station ridership</figcaption>
+      </figure>
+      <p>
+        I also built transit networks in DFW, Seattle, Washington DC, and other
+        cities included in the base game. Eventually, I wanted to build in
+        Seoul, my home city. Seoul is not in the base game and requires mods.
+        This is a great
+        <a href="https://www.youtube.com/watch?v=mCrq765pXfo">tutorial on how to install mods</a
+        >. I just started on my Seoul network but here is a video of the trains
+        going around.
+      </p>
+      <figure>
+        <video
+          controls
+          style="width: 100%; max-width: 900px" aria-label="Seoul Subway Builder mod video">
+          <source src="seoul-video.mp4" type="video/mp4" />
+          Your browser does not support HTML video.
+        </video>
+
+        <figcaption>WIP Seoul network.</figcaption>
+      </figure>
+      <h2>Conclusion</h2>
+      <p>
+        Subway Builder is a fun game that has a lot of potential. In its current
+        state, the game is a bit overpriced for $30 (soon to be $40 on Steam).
+        There are many bugs, performance issues, and features still missing. But
+        even with the shortcomings, I was able to sink in countless hours into
+        the game. If you enjoy managing passenger transportation in city
+        builders or transit simulations, this game is worth considering.
+      </p>
+      <figure>
+        <video
+          controls
+          style="width: 100%; max-width: 900px" aria-label="Train movement video in Subway Builder Seoul mod">
+          <source src="nyc-video.mp4" type="video/mp4" />
+          Your browser does not support HTML video.
+        </video>
+
+        <figcaption>NYC Financial District + Lag</figcaption>
+      </figure>]]></content>
+  </entry>
+  <entry xml:lang="en">
+    <title>The urban transformation of Cheonggyecheon</title>
+    <link rel="alternate" type="text/html" href="https://jeongwoo.xyz/blog/cheonggyecheon/"/>
+    <id>https://jeongwoo.xyz/blog/cheonggyecheon/</id>
+    <published>2026-05-10T00:00:00+00:00</published>
+    <updated>2026-05-10T00:00:00+00:00</updated>
+    <author>
+      <name>Jon</name>
+    </author>
+    <content type="html" xml:base="https://jeongwoo.xyz/blog/cheonggyecheon/"><![CDATA[<h1>The urban transformation of Cheonggyecheon</h1>
+      <p6>Posted on <time datetime="2026-05-10">2026-05-10</time></p6>
+      <h2>Intro</h2>
+      <p>
+        The Cheonggyecheon restoration project is one of the most successful
+        urban restoration efforts in modern times. What used to be an open
+        sewage stream has been turned into an urban amenity that benefits local
+        residents and a popular destination for visitors.
+      </p>
+      <h2>Origins of Cheonggyecheon</h2>
+      <p>
+        Cheonggyecheon is a stream that flows west to east, starting at
+        Inwangsan Mountain through the center of downtown Seoul. Eventually the
+        stream empties into the Han River, which is the main river that cuts
+        through Seoul. This stream was useful as a water source for the city but
+        was also prone to flooding.
+      </p>
+      <p>
+        During the Joseon period in the 14th century, the stream underwent its
+        first restoration project with updated dredging and embankments to
+        reduce the dangers of flooding.
+      </p>
+      <figure>
+        <img
+          src="cheonggyecheon-dredging-drawing.jpg" alt="A drawing that commemorates the Cheonggyecheon dredging" />
+
+        <figcaption>
+          A drawing that commemorates the Cheonggyecheon dredging
+        </figcaption>
+      </figure>
+      <p>
+        After the initial restoration project, the amount of maintenance done on
+        Cheonggyecheon would vary by monarchs. By the early 1900s, the stream
+        was in a bad state due to lack of maintenance and flooding damage.
+      </p>
+      <p>
+        During the Japanese occupation of Korea, there was interest in covering
+        up the stream but insufficient funds were available so only small parts
+        were covered. After the Korean war and devastation of Seoul,
+        Cheonggyecheon developed a large slum community. In the rainy seasons,
+        shacks along the stream would be destroyed and trash would flow into the
+        stream.
+      </p>
+      <figure>
+        <img
+          src="cheonggyecheon-shacks-1950s.jpg" alt="Shacks next to Cheonggyecheon prior to being destroyed in the rainy season in late 1950s." />
+
+        <figcaption>
+          Shacks next to Cheonggyecheon prior to being destroyed in the rainy
+          season in late 1950s.
+        </figcaption>
+      </figure>
+      <h2>Industrialization & Expressway</h2>
+      <p>
+        During the 1960s, the government decided to cover the stream with a
+        large road. In the 70s, the Cheonggyecheon Expressway was built. In the
+        span of 20 years, the area transformed from a shanty town to an
+        expressway with urban development. During post-war development, the
+        primary focus was on economic progress and not much consideration was
+        given to the environmental impact of covering the stream with concrete.
+      </p>
+      <p>
+        See the initial opening of the expressway
+        <a href="https://www.youtube.com/watch?v=9MfkgJauhRQ">here</a>.
+      </p>
+      <figure>
+        <img
+          src="cheonggyecheon-expressway-1972.jpg" alt="Aerial photo of the Cheonggyecheon Expressway in 1972." />
+
+        <figcaption>
+          Aerial photo of the Cheonggyecheon Expressway in 1972.
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          src="cheonggyecheon-expressway-street-vendors-1.png" alt="Cheonggyecheon Expressway and the road below with street vendors." />
+
+        <figcaption>
+          Cheonggyecheon Expressway and the road below with street vendors.
+        </figcaption>
+      </figure>
+      <p>
+        However, the construction of the expressway and road over the stream
+        resulted in smell of mold aboveground due to the polluted waters,
+        additional air pollution from traffic, and significant deterioration of
+        the structural support. Apparently, there was an event where
+        participants could enter the basement of the road, but they were
+        required to wear masks due to the smell and pollution.
+      </p>
+      <figure>
+        <img
+          src="cheonggyecheon-road-basement-2002.jpg" alt="View of the basement of Cheongyecheon road in 2002." />
+
+        <figcaption>
+          View of the basement of Cheongyecheon road in 2002.
+        </figcaption>
+      </figure>
+      <h2>Restoration</h2>
+      <p>
+        In 2003, the mayor of Seoul, Lee Myung-bak, decided to remove the
+        expressway and restore the stream as an urban park. At the time, some
+        people believed that the expressway was essential to business and
+        economic activity. There were protests from street vendors and
+        criticism. Despite this, the final Cheonggyecheon restoration was
+        finished in 2005 with a very positive reception.
+      </p>
+      <figure>
+        <img
+          src="cheonggyecheon-starting-point.jpg" alt="The starting point of Cheonggyecheon." />
+
+        <figcaption>The starting point of Cheonggyecheon.</figcaption>
+      </figure>
+      <p>
+        Within a few years, residents felt the positive impact of the project as
+        temperatures around Cheonggyecheon were often 5 to 10 degrees Fahrenheit
+        cooler than other areas in Seoul. Additionally, car pollution and
+        congestion decreased while transit usage improved after the restoration.
+      </p>
+      <p>
+        The project also improved pedestrian access, public space, and
+        biodiversity along the stream. With the new community space, events like
+        the Seoul Lantern Festival and other public events are held at
+        Cheonggyecheon.
+      </p>
+      <figure>
+        <img
+          src="cheonggyecheon-visit-december-2023-1.jpg" alt="A photo from my visit in December 2023." />
+
+        <figcaption>A photo from my visit in December 2023.</figcaption>
+      </figure>
+      <h2>Conclusion</h2>
+      <p>
+        While there were doubts about the final restoration project of
+        Cheonggyecheon, the government was able to successfully remove the
+        expressway and build a place where people want to be. Now, it serves as
+        a real-world example of how to create better places for people in cities
+        where highways dominate the cityscape.
+      </p>]]></content>
+  </entry>
+  <entry xml:lang="en">
+    <title>Planning my Home Server</title>
+    <link rel="alternate" type="text/html" href="https://jeongwoo.xyz/blog/planning-my-home-server/"/>
+    <id>https://jeongwoo.xyz/blog/planning-my-home-server/</id>
+    <published>2026-04-05T00:00:00+00:00</published>
+    <updated>2026-04-05T00:00:00+00:00</updated>
+    <author>
+      <name>Jon</name>
+    </author>
+    <content type="html" xml:base="https://jeongwoo.xyz/blog/planning-my-home-server/"><![CDATA[<h1>Planning My Home Server</h1>
+      <p6>Posted on <time datetime="2026-04-05">2026-04-05</time></p6>
+      <h2>Intro</h2>
+      <p>
+        Lately, I have been wanting to build a new home server. In my
+        <a href="/blog/self-hosting">previous post</a>, I listed self-hosted
+        software that I was using. I am running my Docker applications / game
+        servers from an old
+        <a href="https://www.pcmag.com/reviews/dell-inspiron-23-2350">Dell All-in-one</a
+        >
+        and my NAS / VPN / Syncthing from my Raspberry Pi 4. The Dell All-in-one
+        has a mobile 4th gen i5 CPU and 8GB of DDR3 RAM. The performance from
+        these computers has been sufficient, but I would like to upgrade and
+        build a new home server at my apartment.
+      </p>
+      <figure>
+        <img
+          src="Raspberry-Pi-4-penny-cooler.jpg" alt="Raspberry-Pi-4-penny-cooler.jpg" />
+        <figcaption>
+          My Raspberry Pi 4 with a &quot;penny cooler&quot;.
+        </figcaption>
+      </figure>
+      <h2>New hardware</h2>
+      <p>
+        I have always wanted to own a server rack for my home server. The
+        industry standard format for server racks is
+        <a href="https://en.wikipedia.org/wiki/19-inch_rack">19 inches wide</a>.
+        However, fitting a standard server rack into my apartment is not ideal,
+        especially if I have to move. A few months ago, I saw several
+        <a
+          href="https://www.youtube.com/watch?v=y1GCIwLm3is&amp;pp=ygUTMTAgaW5jaCBzZXJ2ZXIgamVmZg%3D%3D">videos</a
+        >
+        and
+        <a href="https://www.reddit.com/r/minilab/">social media posts</a> about
+        a 10 inch wide rack. This smaller format is perfect for my needs.
+      </p>
+      <figure>
+        <img
+          src="Jeff-Geerling-Mini-Rack-003.png" alt="Jeff-Geerling-Mini-Rack-003.png" />
+        <figcaption>
+          Source: Jeff Geerling (<a
+            href="https://github.com/geerlingguy/mini-rack/issues/6">Link</a
+          >)
+        </figcaption>
+      </figure>
+      <h3>Compute</h3>
+      <p>
+        For my new server, I will need a computer(s) to run my Docker
+        applications and other services. Given the 10 inch rack constraint, I
+        considered two options: a DIY computer using an ITX motherboard or a
+        micro form factor (MFF) from Lenovo or Dell. I am leaning more towards
+        the Lenovo ThinkCentre Tiny MFF series due to its simplicity as a
+        pre-built unit, PCIe slot, and looks. I plan to use the PCIe slot to
+        upgrade networking. I will be at the
+        <a href="https://tarc.org/hamexpo/">Belton hamfest</a> next weekend and
+        will be on the lookout for any used computers and parts. Ideally, I can
+        find a 7th-9th gen i5 computer with 16-24GB of RAM.
+      </p>
+      <p>
+        One drawback of using an MFF is the power supply. Both Dell and Lenovo
+        MFF computers do not have integrated power supplies, so they require an
+        external power brick. Recently, I found
+        <a href="https://github.com/Shrike-Lab/HomeLab-PDU-V1">this project</a>
+        which is a USB-C PDU for MFF computers. Hopefully, the project matures
+        by the time I build my new home server so I can use it.
+      </p>
+      <h3>NAS</h3>
+      <p>
+        In addition to Docker applications, I need to have a network attached
+        storage (NAS) for my files and backups. I have a spare Raspberry Pi 5
+        which I could use for my new NAS. However, I might use another MFF
+        computer for the NAS so I can run TrueNAS.
+      </p>
+      <p>
+        Given that this home server will be moved several times, I would prefer
+        to build a fully solid state drive NAS but that may be difficult with
+        <a href="https://pcpartpicker.com/trends/price/internal-hard-drive/">storage prices</a
+        >. I need to wait some time for storage prices to come down or go with
+        hard drives if a better deal comes up. My current home server has 20TB
+        of HDD storage with 6TB being used in the NAS. I would like to have at
+        least 6TB for my new build. In addition to the storage drives, I will
+        need to
+        <a href="https://mini-rack.jeffgeerling.com/#disk-shelves">buy or 3D print a mount</a
+        >. I could also consider buying a normal NAS enclosure and putting it on
+        a tray.
+      </p>
+      <figure>
+        <img
+          src="PCPartPicker-Price-Trends-SSD-M2-NVME-2TB.png" alt="PCPartPicker-Price-Trends-SSD-M2-NVME-2TB.png" />
+        <figcaption>
+          Source: PCPartPicker Price Trends (<a
+            href="https://pcpartpicker.com/trends/price/internal-hard-drive/">Link</a
+          >)
+        </figcaption>
+      </figure>
+      <h3>Remaining parts</h3>
+      <p>
+        Lastly, I need to purchase the rack, networking switch, and UPS. There
+        are several metal racks available on Amazon for around $100, or I could
+        3D print my own rack.
+      </p>
+      <h2>New software</h2>
+      <p>
+        With the upgraded hardware, I would like to experiment with new
+        software. Firstly, I need a new Docker application management software.
+        Right now, <a href="https://github.com/louislam/dockge">Dockge</a> is
+        used to create, update, and deploy my Docker applications. However, it
+        is not being maintained or updated. I need to switch to
+        <a href="https://github.com/moghtech/komodo">Komodo</a>,
+        <a href="https://github.com/portainer/portainer">Portainer</a>,
+        <a href="https://github.com/getarcaneapp/arcane">Arcane</a>, or
+        <a href="https://github.com/Finsys/dockhand">Dockhand</a>.
+      </p>
+      <p>
+        Additionally, I may consider using
+        <a href="https://www.proxmox.com/en/">Proxmox</a> to create VMs for each
+        set of tasks. One VM could be used for my Docker applications, another
+        for Minecraft or game servers, and the last one could be for personal
+        development projects.
+      </p>
+      <p>
+        Also, I recently set up
+        <a href="https://github.com/garethgeorge/backrest">Backrest</a> /
+        <a href="https://github.com/restic/restic">restic</a> on my main home
+        server using Backblaze B2. I would like to move this backup to my new
+        server so I do not have to pay monthly for cloud storage.
+      </p>
+      <h2>Conclusion</h2>
+      <p>
+        In a future post, I will detail the final build and include photos. I
+        have some hardware already purchased, but today&#x27;s
+        <a href="https://pcpartpicker.com/trends/">inflated hardware prices</a>
+        make it difficult to justify buying the remaining hardware right now.
+        Maybe I can find a good deal at the hamfest next weekend. However, it
+        may take a few months or longer before the next home server post will
+        come out.
+      </p>]]></content>
+  </entry>
+  <entry xml:lang="en">
+    <title>The unique layouts of airplane cargo hold lavatories</title>
+    <link rel="alternate" type="text/html" href="https://jeongwoo.xyz/blog/aircraft-lavatory-layouts/"/>
+    <id>https://jeongwoo.xyz/blog/aircraft-lavatory-layouts/</id>
+    <published>2025-11-22T00:00:00+00:00</published>
+    <updated>2025-11-22T00:00:00+00:00</updated>
+    <author>
+      <name>Jon</name>
+    </author>
+    <content type="html" xml:base="https://jeongwoo.xyz/blog/aircraft-lavatory-layouts/"><![CDATA[<h1>The unique layouts of airplane cargo hold lavatories</h1>
+      <p6>Posted on <time datetime="2025-11-22">2025-11-22</time></p6>
+      <h2>Intro</h2>
+      <p>
+        In (belated) recognition of
+        <a href="https://en.wikipedia.org/wiki/World_Toilet_Day">World Toilet Day</a
+        >, this blog post is going to talk about aircraft layouts with
+        interesting lavatory placements.
+      </p>
+      <h2>Lufthansa's A340-600 Layout</h2>
+      <p>
+        When you walk to the rear of Lufthansa's Airbus A340-600, you will
+        notice there are no lavatories. Instead, they have been installed in the
+        cargo hold of the aircraft.
+      </p>
+      <figure>
+        <img
+          src="Lufthansa-A340-600-layout.png" alt="Lufthansa A340-600 layout" />
+      </figure>
+      <p>
+        This is because the A340-600 variant has a lot of cargo space, 201.7
+        cubic meters. In comparison to the A340-500, the 600 variant has 50
+        cubic meters more space. Lufthansa sought to better utilize the extra
+        cargo space, so they moved the lavatories below the main deck and
+        installed more seats. They also installed an extra galley and an
+        elevator to move the food cart between decks.
+      </p>
+      <figure>
+        <img
+          src="Lufthansa-A340-600-staircase.jpg" alt="Lufthansa A340-600 staircase to lower deck" />
+      </figure>
+      <p>
+        An interesting quirk of this layout is that some passengers must wait on
+        the main deck since the downstairs space only has 10 oxygen masks.
+      </p>
+      <p>
+        A similar layout can be seen on Airtours/Thomas Cook's A330-200s. While
+        these are smaller aircraft than the A340s, Airtours had a similar cargo
+        problem to Lufthansa. As a tour operator, there is less need for cargo
+        capacity, so they decided to install the lavatories in the cargo hold.
+      </p>
+      <p>
+        Unfortunately, Thomas Cook went bankrupt in 2019 and the A330-200s were
+        <a
+          href="https://www.planespotters.net/airframe/airbus-a330-200-g-mdbd-thomas-cook-airlines/e9jdqr">disassembled</a
+        >
+        <a
+          href="https://www.planespotters.net/airframe/airbus-a330-200-g-omyt-thomas-cook-airlines/eg97l3">in</a
+        >
+        <a
+          href="https://www.planespotters.net/airframe/airbus-a330-200-g-mljl-thomas-cook-airlines/38qpl3">2021</a
+        >. However, Lufthansa has brought back the A340-600s after the pandemic
+        due to passenger demand. There are
+        <a href="https://www.planespotters.net/airline/Lufthansa">6 active A340-600s</a
+        >
+        flying for Lufthansa today. In the current era, the world is more
+        reliant on express cargo delivery than ever before. In most cases, it is
+        more valuable to fill the cargo space with actual cargo than relocating
+        the lavatories. This is why airlines have not introduced this type of
+        layout on modern aircraft.
+      </p>
+      <h2>Lockheed L-1011 Layout</h2>
+      <p>
+        The unique layouts on the A330s and A340s were built 20-25 years ago,
+        but there was another aircraft built 25 years prior that also had a
+        layout with interesting usage of the cargo space.
+      </p>
+      <figure>
+        <img
+          src="TriStar-lounge-cutaway.jpg" alt="PSA's TriStar lounge cutaway" />
+      </figure>
+      <p>
+        In the 1970s, Pacific Southwest Airlines was facing capacity issues
+        between San Francisco and Los Angeles. They decided to purchase
+        Lockheed's L-1011 TriStar jet. This aircraft was a widebody and had too
+        much cargo capacity for a short route, so PSA decided to install a
+        lounge to the front of the aircraft. Passengers could enter the lounge
+        from the main deck using an internal staircase or from the apron via the
+        air stairs.
+      </p>
+      <figure>
+        <img
+          src="TriStar-lounge-interior.jpg" alt="PSA's TriStar lounge interior" />
+      </figure>
+      <p>
+        While PSA's lounge was unique to their TriStar, the L-1011 also had a
+        unique lavatory layout at the back of the aircraft. Known as "Cannery
+        Row" by the crew, the TriStar had 5 lavatories at the back of the
+        aircraft in a semicircle. Since the aircraft only had 7 lavatories
+        total, this area could get busy during the flight. Another unique
+        feature of the L-1011 is the galley placement. Similar to Lufthansa's
+        layout, there was a galley in the cargo hold on the TriStar where crew
+        could prepare food.
+      </p>
+      <img src="TriStar-rear-lavatories.jpg" alt="TriStar rear lavatories" />
+      <h2>Conclusion</h2>
+      <p>
+        Due to the oil crisis in 1973, PSA had to withdraw both TriStar jets
+        after only 8 months of service. It is unlikely that we will see a layout
+        similar to the TriStar in the future. The modern equivalent of PSA's
+        lounge would be the lounges found on Airbus A380s. Notably Emirates,
+        Qatar, Etihad, Korean Air, and Asiana have lounges on their superjumbo
+        jets. However, many airlines are retiring these aircraft in favor of
+        more efficient, twin-engine aircraft.
+      </p>
+      <p>
+        Additionally, cargo space has become extremely valuable due to global
+        supply chains and international commerce, so it is highly unlikely we
+        will see cargo holds turn into passenger spaces in the future.
+      </p>
+      <h2>Fun links</h2>
+      <ul>
+        <li>
+          <a href="https://www.tristar500.net/library/designfeatures.pdf">tristar500.net/library/designfeatures.pdf</a
+          >
+        </li>
+        <li>
+          <a href="https://www.thesegoldwings.com/twa-l1011/">thesegoldwings.com/twa-l1011</a
+          >
+        </li>
+      </ul>]]></content>
+  </entry>
+  <entry xml:lang="en">
+    <title>My experience self hosting</title>
+    <link rel="alternate" type="text/html" href="https://jeongwoo.xyz/blog/self-hosting/"/>
+    <id>https://jeongwoo.xyz/blog/self-hosting/</id>
+    <published>2025-11-08T00:00:00+00:00</published>
+    <updated>2025-11-08T00:00:00+00:00</updated>
+    <author>
+      <name>Jon</name>
+    </author>
+    <content type="html" xml:base="https://jeongwoo.xyz/blog/self-hosting/"><![CDATA[<h1>My experience self hosting</h1>
+      <p6>Posted on <time datetime="2025-11-08">2025-11-08</time></p6>
+      <h2>Intro</h2>
+      <p>
+        Hello! My name is Jon. This is my first proper blog post. I am
+        interested in technology, transit, photography, cities, and video games.
+        Today, I will be writing about self hosting.
+      </p>
+      <blockquote>
+        <p>
+          Note: this is not a tutorial. Please see other resources if you want a
+          step-by-step guide.
+        </p>
+      </blockquote>
+      <h2>What is self hosting?</h2>
+      <p>From Wikipedia:</p>
+      <blockquote>
+        <p>
+          Self-hosting is the practice of running and maintaining a website or
+          service using a private web server, instead of using a service outside
+          of the administrator's own control.
+        </p>
+      </blockquote>
+      <p>
+        This means, you are running a piece of software on your own computer and
+        that software is providing a website or service.
+      </p>
+      <p>
+        Some common self hosted software includes photo backup services, VPNs,
+        password managers, ad blockers, media libraries, and file servers.
+      </p>
+      <p>
+        There is a lot of free, high-quality software created and maintained by
+        the open source community. Sometimes, these software are better than
+        typical services provided by Google, Microsoft, Apple, and other
+        companies.
+      </p>
+      <p>
+        See
+        <a href="https://github.com/awesome-selfhosted/awesome-selfhosted">https://github.com/awesome-selfhosted/awesome-selfhosted</a
+        >
+        and <a href="https://selfh.st/apps/">https://selfh.st/apps/</a> for a
+        list of software.
+      </p>
+      <h2>Why should you self host?</h2>
+      <p>
+        Privacy is one of the biggest reasons why people self host. When you use
+        a Google or Apple service, you are relying on trust to protect your
+        data. You trust the company's reputation, privacy policy, and engineers
+        to store your data safely and use it properly.
+      </p>
+      <p>
+        When you self host an open source project, you trust the contributors,
+        security audits, and yourself. There are always privacy and security
+        risks involved when using any online service, but self hosting allows
+        you to control some of those risks. You can choose whether to host on
+        LAN or the internet. Choosing the latter adds significant risks, and
+        using an insecurely hosted application can be worse than using an
+        application hosted by Google. You should proceed with caution.
+      </p>
+      <blockquote>
+        <p>
+          Note: when you self host an open source project, you can always look
+          at the codebase to ensure privacy and security, but you should
+          consider two things. You need to be a security expert, and you must
+          <em>actually</em> read the entire codebase...
+        </p>
+      </blockquote>
+      <p>
+        Cost is another reason why people self host. When you use an online
+        service, you are paying with your data or a monthly subscription ranging
+        from a few dollars to $15 per service. These subscriptions add up
+        quickly and,
+        <a
+          href="https://digitalcontentnext.org/blog/2025/08/07/q2-2025-digital-subscription-tracking-report/">according to DCN</a
+        >, average total monthly household spending on digital subscriptions is
+        $149.64 in Q2 2025. When you self host, you can either pay for a
+        <a href="https://en.wikipedia.org/wiki/Virtual_private_server">VPS</a>
+        (starting at $5 per month) or buy/use an existing computer and pay
+        electricity and internet.
+      </p>
+      <p>
+        Using an old computer is a great way to get started with self hosting.
+        My first home server was an old
+        <a href="https://www.pcmag.com/reviews/dell-inspiron-23-2350">Dell All-in-one</a
+        >
+        which used a mobile processor. There is no need for powerful systems to
+        self host.
+      </p>
+      <p>
+        Lastly, self hosting is a great way to learn and become familiar with
+        sysadmin, networking, and Linux CLI.
+      </p>
+      <h2>What should you self host?</h2>
+      <p>
+        There are many pieces of software which can be self hosted. Here is a
+        list of essential and fun applications to host.
+      </p>
+      <h3>File server</h3>
+      <p>
+        One of the first things I self hosted was a file server. File servers
+        allow you to access files on a storage drive connected to your server
+        from anywhere on your network. For example, you can upload photos to the
+        file server from your phone and access it on your laptop without using
+        any storage on your devices.
+      </p>
+      <p>
+        <a href="https://ubuntu.com/tutorials/install-and-configure-samba">Samba</a
+        >
+        is an older file server software that is simple and works well with
+        Windows. However, it lacks a web UI and other features.
+      </p>
+      <p>
+        <a href="https://owncloud.com/">ownCloud</a>,
+        <a href="https://nextcloud.com/home-users/">Nextcloud</a>,
+        <a href="https://manual.seafile.com/">Seafile</a> and
+        <a href="https://filebrowser.org/">File Browser</a> are newer file
+        server software. In my experience, these applications provide more
+        features than I need. I have tested a few of these applications but not
+        all of them. I would recommend seeing what makes sense for your use
+        case.
+      </p>
+      <blockquote>
+        <p>
+          Note: File Browser is in "maintenance-only mode"; meaning that the
+          maintainers of the project are only providing security updates. No new
+          features will be added. See
+          <a href="https://github.com/filebrowser/filebrowser/discussions/4906">here</a
+          >.
+        </p>
+        <p>
+          Also note: you should always follow the
+          <a href="https://www.backblaze.com/blog/the-3-2-1-backup-strategy/">3-2-1</a
+          >
+          backup plan for any photos or files.
+        </p>
+      </blockquote>
+      <h3>Syncthing</h3>
+      <p>
+        <a href="https://github.com/syncthing/syncthing">Syncthing</a> is an
+        application that allows for peer-to-peer file synchronization. Using
+        Syncthing along with a file server can replace the need for services
+        like iCloud. I use Syncthing to sync my screenshots and download folders
+        between my phone and computer and back up photos from phone to my
+        server. Syncthing relies on a discovery server to find peers. You can
+        self-host the discovery server, but the Syncthing project also maintains
+        a public global discovery cluster.
+      </p>
+      <h3>Immich</h3>
+      <p>
+        <a href="https://github.com/immich-app/immich">Immich</a> is a popular
+        application that aims to replace Google Photos. It allows you to upload
+        photos, create albums, search photos, face recognition, and other
+        features found in Google Photos.
+      </p>
+      <p>
+        This software allows you to easily view photos on your server and also
+        backup photos from your phone. Currently, I use this application to view
+        photos from my DSLR camera which I store on my server, and my dad uses
+        this to back up the photos on his phone.
+      </p>
+      <p>
+        There is a demo instance here:
+        <a href="https://demo.immich.app/">https://demo.immich.app/</a>
+      </p>
+      <blockquote>
+        <p>
+          Note: you should always follow the
+          <a href="https://www.backblaze.com/blog/the-3-2-1-backup-strategy/">3-2-1</a
+          >
+          backup plan for any photos or files.
+        </p>
+      </blockquote>
+      <h3>Vaultwarden</h3>
+      <p>
+        <a href="https://github.com/dani-garcia/vaultwarden">Vaultwarden</a> is
+        "an alternative server implementation of the Bitwarden Client API,
+        written in Rust and compatible with official Bitwarden clients." This
+        means you can use the official Bitwarden app and browser extensions with
+        your self hosted Vaultwarden service.
+      </p>
+      <h3>WireGuard</h3>
+      <p>
+        <a href="https://www.wireguard.com/">WireGuard</a> is a VPN protocol
+        that can be used to connect to your home's LAN. This is useful if you do
+        not want to expose your applications to the internet but want to access
+        your services away from home. You can use
+        <a href="https://www.wireguard.com/quickstart/">wireguard-tools</a> or
+        other WireGuard implementations such as
+        <a href="https://github.com/pivpn/pivpn">PiVPN</a>.
+      </p>
+      <blockquote>
+        <p>
+          Note: PiVPN is maintained on a best-effort basis. See
+          <a href="https://github.com/pivpn/pivpn/releases/tag/v4.6.1">here</a>.
+        </p>
+      </blockquote>
+      <h3>Minecraft Server</h3>
+      <p>
+        Open source software is not the only thing you can self host. You can
+        also host game servers such as Minecraft, Factorio, or Terraria. There
+        are many guides on self hosting via CLI or you can use a game server
+        management software like
+        <a href="https://github.com/pterodactyl/panel">Pterodactyl</a>.
+      </p>
+      <h2>Conclusion</h2>
+      <p>
+        Self hosting is a fun way to improve your privacy and save money. It
+        also provides additional life to your old computers and a playground to
+        become familiar with Linux. You can self host software alternatives to
+        Google services or other helpful services. I recommend anyone interested
+        in technology and tinkering with Linux to give self hosting a try.
+      </p>]]></content>
+  </entry>
+</feed>
