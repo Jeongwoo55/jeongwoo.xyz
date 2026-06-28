@@ -13,7 +13,7 @@
     <published>2026-06-28T00:00:00+00:00</published>
     <updated>2026-06-28T00:00:00+00:00</updated>
     <author>
-      <name>Jon</name>
+      <name>Jeongwoo Choi</name>
     </author>
     <content type="html" xml:base="https://jeongwoo.xyz/blog/setting-up-my-home-server/"><![CDATA[<h1>Setting up my home server</h1>
         <p6>Posted on <time datetime="2026-06-28">2026-06-28</time></p6>
@@ -30,29 +30,51 @@
             in search of a mini PC. Hamfests usually sell radios and electronic components, so I knew it might not be
             possible to find a mini PC. However, I found one booth that was selling computers. He did not have a mini PC
             ready to sell, but he did find an HP EliteDesk in his bins. We did not know the specs but he offered to give
-            me the PC with a $50 IOU if I'm able to get the computer to work.</p>
-        <p><img src="https://jeongwoo.xyz/blog/setting-up-my-home-server/belton-hamfest-pc-damaged-ssd.jpg" alt="SSD with screw mark" /> Why is there a screw hole in the SSD cover...</p>
+            me the PC with a $50 IOU if I&#x27;m able to get the computer to work.</p>
+        <figure>
+            <img src="https://jeongwoo.xyz/blog/setting-up-my-home-server/belton-hamfest-pc-damaged-ssd.jpg"
+                alt="SSD with screw mark" />
+
+            <figcaption>Why is there a screw hole in the SSD cover...</figcaption>
+        </figure>
         <p>Unfortunately, the computer did not work. This computer normally has a dedicated GPU but someone removed the
             GPU and left the heatsink. Then, the heatsink was screwed into the SSD. I was able to salvage two 8GB DDR4
             SODIMM modules and I might be able to use the CPU (AMD Ryzen 7 Pro 4750 GE) in the future. Maybe with a new
-            SSD, this computer will work but I was unable to enter the BIOS so I'm not sure.</p>
-        <p><img src="https://jeongwoo.xyz/blog/setting-up-my-home-server/belton-hamfest-pc-disassembled.jpg" alt="Mini PC from Belton hamfest disassembled" /> I was surprised to see the heatsink for the GPU</p>
+            SSD, this computer will work but I was unable to enter the BIOS so I&#x27;m not sure.</p>
+        <figure>
+            <img src="https://jeongwoo.xyz/blog/setting-up-my-home-server/belton-hamfest-pc-disassembled.jpg"
+                alt="Mini PC from Belton hamfest disassembled" />
+
+            <figcaption>I was surprised to see the heatsink for the GPU</figcaption>
+        </figure>
         <h2>The search continues</h2>
         <p>A few weekends later, I went to the <a href="https://www.vcfsw.org/">Vintage Computer Festival Southwest</a>
             in DFW but the computers were much older than what I was looking for. At least it was fun seeing vintage
             computers and buying coffee table books.</p>
-        <p><img src="https://jeongwoo.xyz/blog/setting-up-my-home-server/vcf-coffee-table-books.jpg" alt="VCF coffee table books" /> The Macintosh Plus Owner's Guide and Macintosh Reference</p>
+        <figure>
+            <img src="https://jeongwoo.xyz/blog/setting-up-my-home-server/vcf-coffee-table-books.jpg"
+                alt="VCF coffee table books" />
+
+            <figcaption>The Macintosh Plus Owner&#x27;s Guide and Macintosh Reference</figcaption>
+        </figure>
         <p>A few more weekends later, I went to the <a href="https://www.dfwhamexpo.com/">DFW Hamfest</a> where I met
             the same computer booth owner from Belton. Lucky for me, he brought two mini PCs and two 256GB SSDs for me.
             While I offered to pay, he insisted I take it for free and pass on the generosity.</p>
-        <p><img src="https://jeongwoo.xyz/blog/setting-up-my-home-server/dfw-hamfest-haul.jpg" alt="DFW hamfest haul" />
-            My haul from the DFW hamfest</p>
+        <figure>
+            <img src="https://jeongwoo.xyz/blog/setting-up-my-home-server/dfw-hamfest-haul.jpg"
+                alt="DFW hamfest haul" />
+
+            <figcaption>My haul from the DFW hamfest</figcaption>
+        </figure>
         <p>After inspecting the mini PCs, I found that both did not have RAM and one unit was missing a CPU. But, I was
             able to build a working PC using the computer with CPU, RAM from the initial PC, and a 1TB SSD given as a
             gift from a friend. Once the computer booted, I started installing Linux.</p>
         <h2>Setting up my home server</h2>
-        <p><img src="https://jeongwoo.xyz/blog/setting-up-my-home-server/new-home-server.jpg" alt="New home server" />
-            My new home server!</p>
+        <figure>
+            <img src="https://jeongwoo.xyz/blog/setting-up-my-home-server/new-home-server.jpg" alt="New home server" />
+
+            <figcaption>My new home server!</figcaption>
+        </figure>
         <p>At first, I tried to install Ubuntu but ran into a weird boot issue where the screen would go blank. Debian
             also had the same issue but I was able to SSH into the computer.</p>
         <blockquote>
@@ -61,10 +83,10 @@
         </blockquote>
         <p>For now, I moved most of my Docker applications to the new server. I am trying out <a
                 href="https://github.com/getarcaneapp/arcane">Arcane</a> as my Docker management software. So far,
-            it's okay. The dashboard is a little glitchy.</p>
+            it&#x27;s okay. The dashboard is a little glitchy.</p>
         <p>In addition to Arcane, I am also trying out <a
                 href="https://www.cloudflare.com/sase/products/access/">Cloudflare Access</a>, as suggested by a friend.
-            It's nice to add an additional layer of protection for my self hosted apps especially with the rise of
+            It&#x27;s nice to add an additional layer of protection for my self hosted apps especially with the rise of
             security risk from AI.</p>
         <p>For next steps, I still need to set up a DNS, Minecraft/game servers, NAS, Immich, and better
             networking/security. Besides better security, these other items can wait a bit longer. Also, I want to get
@@ -80,7 +102,7 @@
     <published>2026-05-13T00:00:00+00:00</published>
     <updated>2026-05-13T00:00:00+00:00</updated>
     <author>
-      <name>Jon</name>
+      <name>Jeongwoo Choi</name>
     </author>
     <content type="html" xml:base="https://jeongwoo.xyz/blog/subway-builder/"><![CDATA[<h1>How to build your dream subway</h1>
       <p6>Posted on <time datetime="2026-05-13">2026-05-13</time></p6>
@@ -88,26 +110,32 @@
       <p>
         In early 2025, I saw a
         <a
-          href="https://www.reddit.com/r/transit/comments/1hz8gu4/i_started_making_a_game_where_you_build_a_subway/">
+          href="https://www.reddit.com/r/transit/comments/1hz8gu4/i_started_making_a_game_where_you_build_a_subway/"
+        >
           Reddit post</a
         >
         showcasing a new transit-focused game called
         <a href="https://www.subwaybuilder.com/">Subway Builder</a>. I played a
         lot of Cities: Skylines (both
-        <a href="https://store.steampowered.com/app/255710/Cities_Skylines/">one</a
+        <a href="https://store.steampowered.com/app/255710/Cities_Skylines/"
+          >one</a
         >
         &amp;
-        <a href="https://store.steampowered.com/app/949230/Cities_Skylines_II/">two</a
+        <a href="https://store.steampowered.com/app/949230/Cities_Skylines_II/"
+          >two</a
         >
         ), <a href="https://www.openttd.org/">OpenTTD</a>, and a little bit of
-        <a href="https://store.steampowered.com/app/1134710/NIMBY_RAILS/">NIMBY Rails</a
+        <a href="https://store.steampowered.com/app/1134710/NIMBY_RAILS/"
+          >NIMBY Rails</a
         >. So I was excited to try out this new game. While the price is a
         little steep ($30 from the website), I spent my adult money and bought
         the game last December.
       </p>
       <figure>
         <img
-          src="nyc.jpg" alt="NYC Subway Builder save with over 600 stations displayed." />
+          src="nyc.jpg"
+          alt="NYC Subway Builder save with over 600 stations displayed."
+        />
 
         <figcaption>
           My NYC save with 600+ stations. Unfortunately, it's too laggy to
@@ -125,7 +153,9 @@
       </p>
       <figure>
         <img
-          src="heavy-metro-train-type-stats.png" alt="Subway Builder heavy metro train statistics screen." />
+          src="heavy-metro-train-type-stats.png"
+          alt="Subway Builder heavy metro train statistics screen."
+        />
 
         <figcaption>Train stats for heavy metro.</figcaption>
       </figure>
@@ -141,7 +171,9 @@
       </p>
       <figure>
         <img
-          src="building-ui.jpg" alt="Subway Builder construction cost screen showing elevated, tunnel, and demolition costs." />
+          src="building-ui.jpg"
+          alt="Subway Builder construction cost screen showing elevated, tunnel, and demolition costs."
+        />
 
         <figcaption>Building in Subway Builder</figcaption>
       </figure>
@@ -154,7 +186,9 @@
       </p>
       <figure>
         <img
-          src="seattle-transit-demand.jpg" alt="Worker demand bubbles in Seattle where larger bubbles have more demand." />
+          src="seattle-transit-demand.jpg"
+          alt="Worker demand bubbles in Seattle where larger bubbles have more demand."
+        />
 
         <figcaption>
           Worker demand bubbles in Seattle where larger bubbles have more
@@ -171,7 +205,9 @@
       </p>
       <figure>
         <img
-          src="austin-starting-network.jpg" alt="Austin Project Connect lines in Subway Builder with airport extension shown." />
+          src="austin-starting-network.jpg"
+          alt="Austin Project Connect lines in Subway Builder with airport extension shown."
+        />
 
         <figcaption>
           Building the Orange and Blue line, with the phase 2 airport extension
@@ -187,7 +223,9 @@
       </p>
       <figure>
         <img
-          src="austin-dream-transit-network.png" alt="Latest version of the Austin transit network in Subway Builder." />
+          src="austin-dream-transit-network.png"
+          alt="Latest version of the Austin transit network in Subway Builder."
+        />
 
         <figcaption>Latest version of my Austin transit network.</figcaption>
       </figure>
@@ -200,7 +238,9 @@
       </p>
       <figure>
         <img
-          src="nyc-station-ridership.jpg" alt="NYC MTA subway network recreated in Subway Builder." />
+          src="nyc-station-ridership.jpg"
+          alt="NYC MTA subway network recreated in Subway Builder."
+        />
 
         <figcaption>My NYC network station ridership</figcaption>
       </figure>
@@ -209,14 +249,17 @@
         cities included in the base game. Eventually, I wanted to build in
         Seoul, my home city. Seoul is not in the base game and requires mods.
         This is a great
-        <a href="https://www.youtube.com/watch?v=mCrq765pXfo">tutorial on how to install mods</a
+        <a href="https://www.youtube.com/watch?v=mCrq765pXfo"
+          >tutorial on how to install mods</a
         >. I just started on my Seoul network but here is a video of the trains
         going around.
       </p>
       <figure>
         <video
           controls
-          style="width: 100%; max-width: 900px" aria-label="Seoul Subway Builder mod video">
+          style="width: 100%; max-width: 900px"
+          aria-label="Seoul Subway Builder mod video"
+        >
           <source src="seoul-video.mp4" type="video/mp4" />
           Your browser does not support HTML video.
         </video>
@@ -235,7 +278,9 @@
       <figure>
         <video
           controls
-          style="width: 100%; max-width: 900px" aria-label="Train movement video in Subway Builder Seoul mod">
+          style="width: 100%; max-width: 900px"
+          aria-label="Train movement video in Subway Builder Seoul mod"
+        >
           <source src="nyc-video.mp4" type="video/mp4" />
           Your browser does not support HTML video.
         </video>
@@ -250,7 +295,7 @@
     <published>2026-05-10T00:00:00+00:00</published>
     <updated>2026-05-10T00:00:00+00:00</updated>
     <author>
-      <name>Jon</name>
+      <name>Jeongwoo Choi</name>
     </author>
     <content type="html" xml:base="https://jeongwoo.xyz/blog/cheonggyecheon/"><![CDATA[<h1>The urban transformation of Cheonggyecheon</h1>
       <p6>Posted on <time datetime="2026-05-10">2026-05-10</time></p6>
@@ -276,7 +321,9 @@
       </p>
       <figure>
         <img
-          src="cheonggyecheon-dredging-drawing.jpg" alt="A drawing that commemorates the Cheonggyecheon dredging" />
+          src="cheonggyecheon-dredging-drawing.jpg"
+          alt="A drawing that commemorates the Cheonggyecheon dredging"
+        />
 
         <figcaption>
           A drawing that commemorates the Cheonggyecheon dredging
@@ -297,7 +344,9 @@
       </p>
       <figure>
         <img
-          src="cheonggyecheon-shacks-1950s.jpg" alt="Shacks next to Cheonggyecheon prior to being destroyed in the rainy season in late 1950s." />
+          src="cheonggyecheon-shacks-1950s.jpg"
+          alt="Shacks next to Cheonggyecheon prior to being destroyed in the rainy season in late 1950s."
+        />
 
         <figcaption>
           Shacks next to Cheonggyecheon prior to being destroyed in the rainy
@@ -319,7 +368,9 @@
       </p>
       <figure>
         <img
-          src="cheonggyecheon-expressway-1972.jpg" alt="Aerial photo of the Cheonggyecheon Expressway in 1972." />
+          src="cheonggyecheon-expressway-1972.jpg"
+          alt="Aerial photo of the Cheonggyecheon Expressway in 1972."
+        />
 
         <figcaption>
           Aerial photo of the Cheonggyecheon Expressway in 1972.
@@ -327,7 +378,9 @@
       </figure>
       <figure>
         <img
-          src="cheonggyecheon-expressway-street-vendors-1.png" alt="Cheonggyecheon Expressway and the road below with street vendors." />
+          src="cheonggyecheon-expressway-street-vendors-1.png"
+          alt="Cheonggyecheon Expressway and the road below with street vendors."
+        />
 
         <figcaption>
           Cheonggyecheon Expressway and the road below with street vendors.
@@ -343,7 +396,9 @@
       </p>
       <figure>
         <img
-          src="cheonggyecheon-road-basement-2002.jpg" alt="View of the basement of Cheongyecheon road in 2002." />
+          src="cheonggyecheon-road-basement-2002.jpg"
+          alt="View of the basement of Cheongyecheon road in 2002."
+        />
 
         <figcaption>
           View of the basement of Cheongyecheon road in 2002.
@@ -360,7 +415,9 @@
       </p>
       <figure>
         <img
-          src="cheonggyecheon-starting-point.jpg" alt="The starting point of Cheonggyecheon." />
+          src="cheonggyecheon-starting-point.jpg"
+          alt="The starting point of Cheonggyecheon."
+        />
 
         <figcaption>The starting point of Cheonggyecheon.</figcaption>
       </figure>
@@ -378,7 +435,9 @@
       </p>
       <figure>
         <img
-          src="cheonggyecheon-visit-december-2023-1.jpg" alt="A photo from my visit in December 2023." />
+          src="cheonggyecheon-visit-december-2023-1.jpg"
+          alt="A photo from my visit in December 2023."
+        />
 
         <figcaption>A photo from my visit in December 2023.</figcaption>
       </figure>
@@ -398,7 +457,7 @@
     <published>2026-04-05T00:00:00+00:00</published>
     <updated>2026-04-05T00:00:00+00:00</updated>
     <author>
-      <name>Jon</name>
+      <name>Jeongwoo Choi</name>
     </author>
     <content type="html" xml:base="https://jeongwoo.xyz/blog/planning-my-home-server/"><![CDATA[<h1>Planning My Home Server</h1>
       <p6>Posted on <time datetime="2026-04-05">2026-04-05</time></p6>
@@ -408,7 +467,8 @@
         <a href="/blog/self-hosting">previous post</a>, I listed self-hosted
         software that I was using. I am running my Docker applications / game
         servers from an old
-        <a href="https://www.pcmag.com/reviews/dell-inspiron-23-2350">Dell All-in-one</a
+        <a href="https://www.pcmag.com/reviews/dell-inspiron-23-2350"
+          >Dell All-in-one</a
         >
         and my NAS / VPN / Syncthing from my Raspberry Pi 4. The Dell All-in-one
         has a mobile 4th gen i5 CPU and 8GB of DDR3 RAM. The performance from
@@ -417,7 +477,9 @@
       </p>
       <figure>
         <img
-          src="Raspberry-Pi-4-penny-cooler.jpg" alt="Raspberry-Pi-4-penny-cooler.jpg" />
+          src="Raspberry-Pi-4-penny-cooler.jpg"
+          alt="Raspberry-Pi-4-penny-cooler.jpg"
+        />
         <figcaption>
           My Raspberry Pi 4 with a &quot;penny cooler&quot;.
         </figcaption>
@@ -430,7 +492,8 @@
         However, fitting a standard server rack into my apartment is not ideal,
         especially if I have to move. A few months ago, I saw several
         <a
-          href="https://www.youtube.com/watch?v=y1GCIwLm3is&amp;pp=ygUTMTAgaW5jaCBzZXJ2ZXIgamVmZg%3D%3D">videos</a
+          href="https://www.youtube.com/watch?v=y1GCIwLm3is&amp;pp=ygUTMTAgaW5jaCBzZXJ2ZXIgamVmZg%3D%3D"
+          >videos</a
         >
         and
         <a href="https://www.reddit.com/r/minilab/">social media posts</a> about
@@ -438,10 +501,13 @@
       </p>
       <figure>
         <img
-          src="Jeff-Geerling-Mini-Rack-003.png" alt="Jeff-Geerling-Mini-Rack-003.png" />
+          src="Jeff-Geerling-Mini-Rack-003.png"
+          alt="Jeff-Geerling-Mini-Rack-003.png"
+        />
         <figcaption>
           Source: Jeff Geerling (<a
-            href="https://github.com/geerlingguy/mini-rack/issues/6">Link</a
+            href="https://github.com/geerlingguy/mini-rack/issues/6"
+            >Link</a
           >)
         </figcaption>
       </figure>
@@ -476,22 +542,27 @@
       <p>
         Given that this home server will be moved several times, I would prefer
         to build a fully solid state drive NAS but that may be difficult with
-        <a href="https://pcpartpicker.com/trends/price/internal-hard-drive/">storage prices</a
+        <a href="https://pcpartpicker.com/trends/price/internal-hard-drive/"
+          >storage prices</a
         >. I need to wait some time for storage prices to come down or go with
         hard drives if a better deal comes up. My current home server has 20TB
         of HDD storage with 6TB being used in the NAS. I would like to have at
         least 6TB for my new build. In addition to the storage drives, I will
         need to
-        <a href="https://mini-rack.jeffgeerling.com/#disk-shelves">buy or 3D print a mount</a
+        <a href="https://mini-rack.jeffgeerling.com/#disk-shelves"
+          >buy or 3D print a mount</a
         >. I could also consider buying a normal NAS enclosure and putting it on
         a tray.
       </p>
       <figure>
         <img
-          src="PCPartPicker-Price-Trends-SSD-M2-NVME-2TB.png" alt="PCPartPicker-Price-Trends-SSD-M2-NVME-2TB.png" />
+          src="PCPartPicker-Price-Trends-SSD-M2-NVME-2TB.png"
+          alt="PCPartPicker-Price-Trends-SSD-M2-NVME-2TB.png"
+        />
         <figcaption>
           Source: PCPartPicker Price Trends (<a
-            href="https://pcpartpicker.com/trends/price/internal-hard-drive/">Link</a
+            href="https://pcpartpicker.com/trends/price/internal-hard-drive/"
+            >Link</a
           >)
         </figcaption>
       </figure>
@@ -545,14 +616,15 @@
     <published>2025-11-22T00:00:00+00:00</published>
     <updated>2025-11-22T00:00:00+00:00</updated>
     <author>
-      <name>Jon</name>
+      <name>Jeongwoo Choi</name>
     </author>
     <content type="html" xml:base="https://jeongwoo.xyz/blog/aircraft-lavatory-layouts/"><![CDATA[<h1>The unique layouts of airplane cargo hold lavatories</h1>
       <p6>Posted on <time datetime="2025-11-22">2025-11-22</time></p6>
       <h2>Intro</h2>
       <p>
         In (belated) recognition of
-        <a href="https://en.wikipedia.org/wiki/World_Toilet_Day">World Toilet Day</a
+        <a href="https://en.wikipedia.org/wiki/World_Toilet_Day"
+          >World Toilet Day</a
         >, this blog post is going to talk about aircraft layouts with
         interesting lavatory placements.
       </p>
@@ -564,7 +636,9 @@
       </p>
       <figure>
         <img
-          src="Lufthansa-A340-600-layout.png" alt="Lufthansa A340-600 layout" />
+          src="Lufthansa-A340-600-layout.png"
+          alt="Lufthansa A340-600 layout"
+        />
       </figure>
       <p>
         This is because the A340-600 variant has a lot of cargo space, 201.7
@@ -576,7 +650,9 @@
       </p>
       <figure>
         <img
-          src="Lufthansa-A340-600-staircase.jpg" alt="Lufthansa A340-600 staircase to lower deck" />
+          src="Lufthansa-A340-600-staircase.jpg"
+          alt="Lufthansa A340-600 staircase to lower deck"
+        />
       </figure>
       <p>
         An interesting quirk of this layout is that some passengers must wait on
@@ -591,16 +667,20 @@
       <p>
         Unfortunately, Thomas Cook went bankrupt in 2019 and the A330-200s were
         <a
-          href="https://www.planespotters.net/airframe/airbus-a330-200-g-mdbd-thomas-cook-airlines/e9jdqr">disassembled</a
+          href="https://www.planespotters.net/airframe/airbus-a330-200-g-mdbd-thomas-cook-airlines/e9jdqr"
+          >disassembled</a
         >
         <a
-          href="https://www.planespotters.net/airframe/airbus-a330-200-g-omyt-thomas-cook-airlines/eg97l3">in</a
+          href="https://www.planespotters.net/airframe/airbus-a330-200-g-omyt-thomas-cook-airlines/eg97l3"
+          >in</a
         >
         <a
-          href="https://www.planespotters.net/airframe/airbus-a330-200-g-mljl-thomas-cook-airlines/38qpl3">2021</a
+          href="https://www.planespotters.net/airframe/airbus-a330-200-g-mljl-thomas-cook-airlines/38qpl3"
+          >2021</a
         >. However, Lufthansa has brought back the A340-600s after the pandemic
         due to passenger demand. There are
-        <a href="https://www.planespotters.net/airline/Lufthansa">6 active A340-600s</a
+        <a href="https://www.planespotters.net/airline/Lufthansa"
+          >6 active A340-600s</a
         >
         flying for Lufthansa today. In the current era, the world is more
         reliant on express cargo delivery than ever before. In most cases, it is
@@ -616,7 +696,9 @@
       </p>
       <figure>
         <img
-          src="TriStar-lounge-cutaway.jpg" alt="PSA's TriStar lounge cutaway" />
+          src="TriStar-lounge-cutaway.jpg"
+          alt="PSA's TriStar lounge cutaway"
+        />
       </figure>
       <p>
         In the 1970s, Pacific Southwest Airlines was facing capacity issues
@@ -629,7 +711,9 @@
       </p>
       <figure>
         <img
-          src="TriStar-lounge-interior.jpg" alt="PSA's TriStar lounge interior" />
+          src="TriStar-lounge-interior.jpg"
+          alt="PSA's TriStar lounge interior"
+        />
       </figure>
       <p>
         While PSA's lounge was unique to their TriStar, the L-1011 also had a
@@ -660,11 +744,13 @@
       <h2>Fun links</h2>
       <ul>
         <li>
-          <a href="https://www.tristar500.net/library/designfeatures.pdf">tristar500.net/library/designfeatures.pdf</a
+          <a href="https://www.tristar500.net/library/designfeatures.pdf"
+            >tristar500.net/library/designfeatures.pdf</a
           >
         </li>
         <li>
-          <a href="https://www.thesegoldwings.com/twa-l1011/">thesegoldwings.com/twa-l1011</a
+          <a href="https://www.thesegoldwings.com/twa-l1011/"
+            >thesegoldwings.com/twa-l1011</a
           >
         </li>
       </ul>]]></content>
@@ -676,7 +762,7 @@
     <published>2025-11-08T00:00:00+00:00</published>
     <updated>2025-11-08T00:00:00+00:00</updated>
     <author>
-      <name>Jon</name>
+      <name>Jeongwoo Choi</name>
     </author>
     <content type="html" xml:base="https://jeongwoo.xyz/blog/self-hosting/"><![CDATA[<h1>My experience self hosting</h1>
       <p6>Posted on <time datetime="2025-11-08">2025-11-08</time></p6>
@@ -717,7 +803,8 @@
       </p>
       <p>
         See
-        <a href="https://github.com/awesome-selfhosted/awesome-selfhosted">https://github.com/awesome-selfhosted/awesome-selfhosted</a
+        <a href="https://github.com/awesome-selfhosted/awesome-selfhosted"
+          >https://github.com/awesome-selfhosted/awesome-selfhosted</a
         >
         and <a href="https://selfh.st/apps/">https://selfh.st/apps/</a> for a
         list of software.
@@ -752,7 +839,8 @@
         from a few dollars to $15 per service. These subscriptions add up
         quickly and,
         <a
-          href="https://digitalcontentnext.org/blog/2025/08/07/q2-2025-digital-subscription-tracking-report/">according to DCN</a
+          href="https://digitalcontentnext.org/blog/2025/08/07/q2-2025-digital-subscription-tracking-report/"
+          >according to DCN</a
         >, average total monthly household spending on digital subscriptions is
         $149.64 in Q2 2025. When you self host, you can either pay for a
         <a href="https://en.wikipedia.org/wiki/Virtual_private_server">VPS</a>
@@ -762,7 +850,8 @@
       <p>
         Using an old computer is a great way to get started with self hosting.
         My first home server was an old
-        <a href="https://www.pcmag.com/reviews/dell-inspiron-23-2350">Dell All-in-one</a
+        <a href="https://www.pcmag.com/reviews/dell-inspiron-23-2350"
+          >Dell All-in-one</a
         >
         which used a mobile processor. There is no need for powerful systems to
         self host.
@@ -785,7 +874,8 @@
         any storage on your devices.
       </p>
       <p>
-        <a href="https://ubuntu.com/tutorials/install-and-configure-samba">Samba</a
+        <a href="https://ubuntu.com/tutorials/install-and-configure-samba"
+          >Samba</a
         >
         is an older file server software that is simple and works well with
         Windows. However, it lacks a web UI and other features.
@@ -805,12 +895,14 @@
           Note: File Browser is in "maintenance-only mode"; meaning that the
           maintainers of the project are only providing security updates. No new
           features will be added. See
-          <a href="https://github.com/filebrowser/filebrowser/discussions/4906">here</a
+          <a href="https://github.com/filebrowser/filebrowser/discussions/4906"
+            >here</a
           >.
         </p>
         <p>
           Also note: you should always follow the
-          <a href="https://www.backblaze.com/blog/the-3-2-1-backup-strategy/">3-2-1</a
+          <a href="https://www.backblaze.com/blog/the-3-2-1-backup-strategy/"
+            >3-2-1</a
           >
           backup plan for any photos or files.
         </p>
@@ -846,7 +938,8 @@
       <blockquote>
         <p>
           Note: you should always follow the
-          <a href="https://www.backblaze.com/blog/the-3-2-1-backup-strategy/">3-2-1</a
+          <a href="https://www.backblaze.com/blog/the-3-2-1-backup-strategy/"
+            >3-2-1</a
           >
           backup plan for any photos or files.
         </p>

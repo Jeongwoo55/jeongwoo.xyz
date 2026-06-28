@@ -146,7 +146,7 @@ def main() -> int:
                 "title": title,
                 "published": published,
                 "updated": published,
-                "author": "Jon",
+                "author": "Jeongwoo Choi",
                 "link": link,
                 "content_html": content_html,
             }

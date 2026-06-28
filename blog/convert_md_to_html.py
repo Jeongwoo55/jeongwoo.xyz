@@ -155,6 +155,19 @@ def render_block(lines: List[str]) -> str:
         level = len(heading_match.group(1))
         return f"<h{level}>{inline_html(heading_match.group(2).strip())}</h{level}>"
 
+    if len(lines) == 2:
+        first = lines[0].strip()
+        second = lines[1].strip()
+        if re.match(r"^!\[[^\]]*\]\([^)]+\)\s*$", first):
+            image_html = inline_html(first).strip()
+            caption_html = inline_html(second)
+            return (
+                "<figure>\n"
+                f"        {image_html}\n\n"
+                f"        <figcaption>{caption_html}</figcaption>\n"
+                "      </figure>"
+            )
+
     return f"<p>{inline_html(' '.join(line.strip() for line in lines))}</p>"
 
 
