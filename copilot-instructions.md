@@ -38,7 +38,9 @@ python blog/convert_md_to_html.py blog/<post-slug>.md
 
 2. Add the new blog post to the blog index page (`blog/index.html`) by inserting a new list item with the post title and date.
 
-3. Generate the Atom feed:
+3. Update the blog index page footer last updated timestamp to the current post date (for example, `2026-06-28`).
+
+4. Generate the Atom feed:
 
 ```bash
 python blog/generate_atom.py
